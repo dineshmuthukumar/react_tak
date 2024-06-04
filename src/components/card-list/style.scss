@@ -1,0 +1,46 @@
+.cardList---container {
+    // display: grid;
+    // // gap: 1rem;
+    // grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    // // background-color: green;
+    // height: 100vh;
+
+    // @media screen and (min-width:767px) {
+    //     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    // }
+
+    // @media screen and (min-width:992px) {
+    //     grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    // }
+
+
+    &.show {
+        display: block;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+
+
+    &.desktop {
+
+        display: grid;
+        // gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        // background-color: green;
+        height: 100vh;
+
+        @media screen and (min-width:767px) {
+            grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        }
+
+        @media screen and (min-width:992px) {
+            grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+        }
+
+    }
+
+
+}

@@ -1,0 +1,100 @@
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    // background-color: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.mobile {
+        height: 100vh;
+    }
+
+    .card-header {
+        margin-bottom: 3rem;
+        padding: 1rem;
+        background-color: #fff;
+
+        @media screen and (min-width:767px) {
+            background-color: transparent;
+        }
+
+        .card-logo {
+
+            img {
+                width: 60px;
+                height: auto;
+                filter: invert(1);
+
+                @media screen and (min-width:767px) {
+                    filter: unset;
+                }
+            }
+
+
+        }
+    }
+
+    .card-body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+
+        @media screen and (min-width:767px) {
+            flex-direction: row;
+        }
+
+        .content-section {
+            width: 100%;
+            display: flex;
+            gap: 0.5rem;
+            flex-direction: column;
+            padding-left: 2.5rem;
+
+            @media screen and (min-width:767px) {
+                width: 60%;
+            }
+
+            img {
+                width: 35px;
+                height: auto;
+            }
+
+            h2,
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: white;
+                margin: 0;
+            }
+
+            .line {
+                border-bottom: 2px solid #fff;
+            }
+        }
+
+        .image-section {
+            width: 100%;
+
+            @media screen and (min-width:767px) {
+                width: 40%;
+            }
+
+            img {
+                width: 100%;
+                max-width: 300px;
+                // display: block;
+                margin: 0 auto;
+
+                @media screen and (min-width:767px) {
+                    margin: unset;
+                    max-width: unset;
+                }
+            }
+        }
+    }
+
+}
